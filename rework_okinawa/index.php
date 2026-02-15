@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ココロおき楽 沖縄市</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="./assets/libs/splide/js/splide.js"></script>
+  <link rel="stylesheet" href="./assets/libs/splide/css/splide.min.css">
+  <script defer src="./assets/js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/rest.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="js-header header">
+  <p class="header__logo"><img src="./assets/img/logo.png" alt="合同会社ココロおき楽"></p>
+  <nav class="header__nav">
+    <a href="./staff" class="header__nav__link">スタッフ紹介</a>
+    <a href="./staff" class="header__nav__link">ご利用事例</a>
+    <a href="./staff" class="header__nav__link">おき楽ニュース</a>
+    <a href="./#contact" class="header__nav__contact">問い合わせ・ご相談［無料］</a>
+  </nav>
+  <a href="#" class="js-toggle header__nav__btn" data-target="js-header">
+    <span class="header__nav__btn__bar"></span>
+    <span class="header__nav__btn__bar"></span>
+    <span class="header__nav__btn__bar"></span>
+    <span class="header__nav__btn__text">MENU</span>
+  </a>
+</header>
+<main>
+  <section class="kv">
+    <div class="kv__main">
+      <p class="kv__main__text__top">Rework</p>
+      <h1 class="kv__main__text">
+        <span>ココロおきなく、</span>
+        <span>あなたらしく、</span>
+        <span>はたらく。</span>
+      </h1>
+      <div class="kv__main__caption">
+        ココロの不調や働くことが不安なあなたの<br>
+        <strong>復職・再就職を<br>サポートします。</strong>
+        わたしたち「リワーク&カウンセリングステーション ココロおき楽」は、<br>
+        心理師と看護師が立ち上げた「民間リワーク施設」です。<br>
+        ココロの不調で働くことが不安な方の「復職・再就職のサポート」をしています。<br>
+        <br>
+        ココロの不調を繰り返さないために、<br>
+        ご自身のココロと向き合いながら、あなたらしさを育てて、社会復帰を目指します。
+      </div>
+    </div>
+    <p class="kv__suText">Counseling station</p>
+    <p class="kv__deco"><img src="./assets/img/deco01.png" alt=""></p>
+  </section>
+
+  <section class="schedule">
+    <p class="schedule__deco01"><img src="./assets/img/deco02.png" alt=""></p>
+    <div class="schedule__wrap">
+      <div class="schedule__box">
+        <div class="schedule__main">
+          <hgroup>
+            <h2 class="schedule__box__headline">児童発達支援</h2>
+            <p class="schedule__box__headline__sub">対象：受給者証をお持ちの3～6歳までの未就学児</p>
+          </hgroup>
+          <div class="schedule__flow">
+            <h3 class="schedule__flow__headline">1日の流れ</h3>
+            <div class="schedule__flow__container">
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">09:45</p>
+                <p class="schedule__flow__text">来所（送迎対応）</p>
+              </div>
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">10:00</p>
+                <p class="schedule__flow__text">朝の会 - 言語聴覚士、心理師、看護師による個々の発達課題に沿った専門的な訓練<br>※訓練時間は1.5〜3時間程度</p>
+              </div>
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">11:30</p>
+                <p class="schedule__flow__text">終わりの会</p>
+              </div>
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">12:00</p>
+                <p class="schedule__flow__text">送迎（自宅や保育園など）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="schedule__image"><img src="./assets/img/phot_image01.jpg" alt=""></p>
+        <p class="schedule__deco02"><img src="./assets/img/deco02.png" alt=""></p>
+      </div>
+      <div class="schedule__box">
+        <div class="schedule__main">
+          <hgroup>
+            <h2 class="schedule__box__headline">放課後等デイサービス</h2>
+            <p class="schedule__box__headline__sub">対象：小学校2年生までの就学児</p>
+          </hgroup>
+          <div class="schedule__flow">
+            <h3 class="schedule__flow__headline">1日の流れ</h3>
+            <div class="schedule__flow__container">
+              <div class="schedule__flow__block">  
+                <p class="schedule__flow__time">14:00</p>
+                <p class="schedule__flow__text">幼稚園・学校へお迎え<br>※学年によって来所時間は異なります</p>
+              </div>
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">15:00</p>
+                <p class="schedule__flow__text">始まりの会と宿題・個々の課題への取り組み<br>- 言語聴覚士、心理士、看護師、教員による個々の発達課題に応じた学習の支援やソーシャルスキルトレーニング<br>※訓練時間は1.5〜3時間程度</p>
+              </div>
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">16:30</p>
+                <p class="schedule__flow__text">掃除・終わりの会</p>
+              </div>
+              <div class="schedule__flow__block">
+                <p class="schedule__flow__time">17:45</p>
+                <p class="schedule__flow__text">サービス提供時間終了</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="schedule__image"><img src="./assets/img/phot_image02.jpg" alt=""></p>
+        <p class="schedule__deco03"><img src="./assets/img/deco03.png" alt=""></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="support">
+    <div class="support__wrap">
+      <h2 class="c-headline">
+        <span class="c-headline__ja">当事業所での<br class="sp">支援内容</span>
+        <span class="c-headline__en">support content</span>
+      </h2>
+      <div class="support__container">
+        <ul class="support__box">
+          <li class="support__container__list">・言語聴覚士による構音障害の検査、評価、訓練</li>
+          <li class="support__container__list">・ソーシャルスキルトレーニング</li>
+          <li class="support__container__list">・教員免許保持者による学習指導</li>
+          <li class="support__container__list">・未就学児からの訓練でスムーズな小学校への<br>移行をサポート</li>
+        </ul>
+        <ul class="support__box">
+          <li class="support__container__list">・担任との連携協力</li>
+          <li class="support__container__list">・保護者へのペアレントトレーニング</li>
+          <li class="support__container__list">・応用行動分析による支援</li>
+        </ul>
+        <p class="support__container__illust"><img src="./assets/img/illust01.png" alt=""></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow">
+    <div class="flow__wrap">
+      <h2 class="c-headline">
+        <span class="c-headline__ja">ご利用までの流れ</span>
+        <span class="c-headline__en">Flow</span>
+      </h2>
+      <ol class="flow__main">
+        <li class="flow__block">
+          <p class="flow__block__num">1</p>
+          <div class="flow__block__main">
+            <h3 class="flow__block__headline">お問い合わせ</h3>
+            <p class="flow__block__text">ページ最下位からお気軽にお問い合わせください。</p>
+          </div>
+        </li>
+        <li class="flow__block">
+          <p class="flow__block__num">2</p>
+          <div class="flow__block__main">
+            <h3 class="flow__block__headline">見学・体験</h3>
+            <p class="flow__block__text">施設を見学し、サービス内容を確認。</p>
+          </div>
+        </li>
+        <li class="flow__block">
+          <p class="flow__block__num">3</p>
+          <div class="flow__block__main">
+            <h3 class="flow__block__headline">契約</h3>
+            <p class="flow__block__text">サービス内容に同意の上、契約を締結。</p>
+          </div>
+        </li>
+        <li class="flow__block">
+          <p class="flow__block__num">4</p>
+          <div class="flow__block__main">
+            <h3 class="flow__block__headline">利用開始</h3>
+            <p class="flow__block__text">サービスを開始し、お子様の成長をサポートします。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <p class="flow__deco01"><img src="./assets/img/deco04.png" alt=""></p>
+  </section>
+
+  <section class="blog">
+    <div class="blog__top">
+      <h2 class="c-headline">
+        <span class="c-headline__ja">ブログ</span>
+        <span class="c-headline__en">Blog</span>
+      </h2>
+    </div>
+    <div class="blog__wrap">
+      <div class="blog__controller">
+        <p class="js-splide_arrowLeft blog__controller__left"><img src="./assets/img/icon_arrow_right-black.svg" alt=""></p>
+        <p class="js-splide_count blog__controller__count"></p>
+        <p class="js-splide_arrowRight blog__controller__right"><img src="./assets/img/icon_arrow_right-black.svg" alt=""></p>
+      </div>
+      <div class="splide blog__container" aria-label="ブログのカルーセル">
+        <div class="splide__track blog__track">
+          <div class="splide__list">
+            <a class="splide__slide blog__box" href="">
+              <div class="blog__box__top">
+                <p class="blog__box__image"><img src="./assets/img/logo.png" alt=""></p>
+                <p class="blog__box__date">2023.10.10</p>
+              </div>
+              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
+            </a>
+
+            <a class="splide__slide blog__box" href="">
+              <div class="blog__box__top">
+                <p class="blog__box__image"><img src="./assets/img/logo.png" alt=""></p>
+                <p class="blog__box__date">2023.10.10</p>
+              </div>
+              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
+            </a>
+
+            <a class="splide__slide blog__box" href="">
+              <div class="blog__box__top">
+                <p class="blog__box__image"><img src="./assets/img/logo.png" alt=""></p>
+                <p class="blog__box__date">2023.10.10</p>
+              </div>
+              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
+            </a>
+
+            <a class="splide__slide blog__box" href="">
+              <div class="blog__box__top">
+                <p class="blog__box__image"><img src="./assets/img/logo.png" alt=""></p>
+                <p class="blog__box__date">2023.10.10</p>
+              </div>
+              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
+            </a>
+
+            <a class="splide__slide blog__box" href="">
+              <div class="blog__box__top">
+                <p class="blog__box__image"><img src="./assets/img/logo.png" alt=""></p>
+                <p class="blog__box__date">2023.10.10</p>
+              </div>
+              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="blog__bottom">
+      <a href="" class="blog__button">
+        <p class="blog__button__icon"><img src="./assets/img/icon_arrow_right.svg" alt=""></p>
+        もっと見る
+      </a>
+    </div>
+  </section>
+
+  <section class="office">
+    <div class="office__wrap">
+      <h2 class="c-headline">
+        <span class="c-headline__ja">事業所情報</span>
+        <span class="c-headline__en">Office</span>
+      </h2>
+      <div class="office__main">
+        <dl class="office__define">
+          <dt class="office__term">定休日</dt>
+          <dd class="office__details">〒901-0315 沖縄県糸満市照屋765番地<br>ローソン2F 丸正ビル 203号</dd>
+        </dl>
+        <dl class="office__define">
+          <dt class="office__term">TEL</dt>
+          <dd class="office__details">098-996-9583</dd>
+        </dl>
+        <dl class="office__define">
+          <dt class="office__term">営業日</dt>
+          <dd class="office__details">月～土曜 ［09:45～17:45］</dd>
+        </dl>
+        <dl class="office__define">
+          <dt class="office__term">定休日</dt>
+          <dd class="office__details">日曜祝日、年末年始</dd>
+        </dl>
+      </div>
+      <div class="office__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7164.019130336727!2d127.67742569295856!3d26.131231108486176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e567a46b34cb9d%3A0x29ec7eb939b60fc3!2z44Kz44Kz44Ot44GK44GN5qW9IC0g5YWQ56ul55m66YGU5pSv5o-0JuaUvuiqsuW-jOetieODh-OCpOOCteODvOODk-OCuQ!5e0!3m2!1sja!2sjp!4v1770039903557!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="office__illust"><img src="./assets/img/illust02.png" alt=""></p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact__wrap">
+      <div class="contact__top">
+        <h2 class="c-headline">
+          <span class="c-headline__ja">お問い合わせ</span>
+          <span class="c-headline__en">Contact</span>
+        </h2>
+        <p class="contact__text">お問い合わせフォームまたは、<br class="sp">公式LINEからお気軽に<br class="sp">ご連絡ください。</p>
+      </div>
+      <form action="" class="contact__form">
+        <dl class="contact__form__define">
+          <dt class="contact__form__term">氏名※</dt>
+          <dd class="contact__form__input"><input type="text" placeholder="山田　花子"></dd>
+        </dl>
+        <dl class="contact__form__define">
+          <dt class="contact__form__term">メールアドレス※</dt>
+          <dd class="contact__form__input"><input type="mail" placeholder="aaaaaaaa@example.com"></dd>
+        </dl>
+        <dl class="contact__form__define">
+          <dt class="contact__form__term">電話番号※</dt>
+          <dd class="contact__form__input"><input type="text" placeholder="000-0000-0000"></dd>
+        </dl>
+        <dl class="contact__form__define">
+          <dt class="contact__form__term">お問い合わせ内容※</dt>
+          <dd class="contact__form__input"><textarea type="text" rows="8" placeholder="お問い合わせ内容をご記入ください"></textarea></dd>
+        </dl>
+        <input class="contact__form__button" type="submit" value="送信">
+      </form>
+    </div>
+    <a href="#" class="contact__line">公式LINEから問い合わせせる</a>
+    <p class="contact__deco01"><img src="./assets/img/deco05.png" alt=""></p>
+  </section>
+
+  <footer class="footer">
+    <small class="copyright">Copyright© ️2023 ココロおき楽 All Rights Reserved.</small>
+
+  </footer>
+</main>
+</body>
+</html>
