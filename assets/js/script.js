@@ -25,7 +25,7 @@ function heartFix(Class){
     const targetClass01   = document.getElementsByClassName(target.getAttribute("data-Class01"))[0];
     const targetClass02   = document.getElementsByClassName(target.getAttribute("data-Class02"))[0];
     let targetRelative = target.getBoundingClientRect().top - windowHeight / 2;
-    let scale = window.innerWidth >= 768 ?  1 + (-0.04 * (targetRelative)) : 1 + (-0.04 * (targetRelative));
+    let scale = window.innerWidth >= 768 ?  1 + (-0.08 * (targetRelative)) : 1 + (-0.08 * (targetRelative));
 
 
     if(scale >= 70){
