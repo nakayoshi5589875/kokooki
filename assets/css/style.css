@@ -140,7 +140,8 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: calc(18 * var(--var-fzFlex)) calc(110 * var(--var-fzFlex)) calc(18 * var(--var-fzFlex)) calc(36 * var(--var-fzFlex));
+  padding: calc(15 * var(--var-fzFlex)) calc(110 * var(--var-fzFlex)) calc(15 * var(--var-fzFlex)) calc(36 * var(--var-fzFlex));
+  background-color: rgba(255, 255, 255, .75);
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
