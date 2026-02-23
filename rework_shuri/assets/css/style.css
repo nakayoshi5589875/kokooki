@@ -87,14 +87,15 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: calc(18 * var(--var-fzFlex)) calc(50 * var(--var-fzFlex)) calc(18 * var(--var-fzFlex)) calc(36 * var(--var-fzFlex));
+  padding: calc(18 * var(--var-fzFlex)) calc(50 * var(--var-fzFlex)) calc(18 * var(--var-fzFlex)) 0;
+  background-color: rgba(255, 255, 255, .75);
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
 }
 .header__logo{
   display: block;
-  width: calc(367 * var(--var-fzFlex));
+  width: calc(246 * var(--var-fzFlex));
 }
 .header__nav{
   display: flex;

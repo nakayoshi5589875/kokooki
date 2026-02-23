@@ -1268,8 +1268,8 @@ img{
   color: #000;
 }
 .news__pageNation__link.is-active{
-  background-color: #ED6C00;
-  border: 1px solid#ED6C00;
+  background-color:  var(--var-colMain);
+  border: 1px solid  var(--var-colMain);
   color: #fff;
 }
 .news__pageNation__last{
@@ -1525,8 +1525,8 @@ img{
     color: #000;
   }
   .news__pageNation__link.is-active{
-    background-color: #ED6C00;
-    border: 1px solid#ED6C00;
+    background-color:  var(--var-colMain);
+    border: 1px solid  var(--var-colMain);
     color: #fff;
   }
   .news__pageNation__last{
