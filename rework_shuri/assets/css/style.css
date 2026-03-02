@@ -991,6 +991,178 @@ img{
 }
 
 
+
+/* flow
+---------------------------------------------------- */
+.flow{
+  margin-top: calc(105 * var(--var-fzFlex));
+}
+.flow__top{
+  display: flex;
+  justify-content: space-between;
+  width: calc(1140 * var(--var-fzFlex));
+}
+.flow__headline{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flow__headline__ja{
+  font-size: calc(32 * var(--var-fzFlex));
+  line-height: 1.8;
+}
+.flow__headline__en{
+  display: block;
+  margin-left: calc(24 * var(--var-fzFlex));
+  font-family: "Dancing Script", cursive;
+  font-size: calc(40 * var(--var-fzFlex));
+  line-height: 1.8;
+  color: #FF4E9C;
+}
+.flow__text{
+  width: calc(653 * var(--var-fzFlex));
+  font-size: calc(16 * var(--var-fzFlex));
+  line-height: 2;
+}
+.flow__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: calc(60 * var(--var-fzFlex)) auto 0;
+  width: calc(947 * var(--var-fzFlex));
+}
+.flow__step{
+  text-align: center;
+  width: calc(167 * var(--var-fzFlex));
+}
+.flow__step__step{
+  color: var(--var-colMain);
+  font-size: calc(18 * var(--var-fzFlex));
+  line-height: 1.5;
+}
+.flow__step__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(13 * var(--var-fzFlex));
+  width: calc(167 * var(--var-fzFlex));
+  height: calc(167 * var(--var-fzFlex));
+  border-radius: calc(20 * var(--var-fzFlex));
+  background-color: #FFA6CD;
+}
+.flow__step__icon img{
+  width: calc(85 * var(--var-fzFlex));
+  height: calc(85 * var(--var-fzFlex));
+  object-fit: contain;
+  object-position: center center;
+}
+.flow__step__text{
+  margin-top: calc(21 * var(--var-fzFlex));
+  font-size: calc(18 * var(--var-fzFlex));
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px){
+  .flow{
+    margin-top: calc(73 * var(--var-fzFlex));
+  }
+  .flow__top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: calc(322 * var(--var-fzFlex));
+  }
+  .flow__headline{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .flow__headline__ja{
+    font-size: calc(25 * var(--var-fzFlex));
+    line-height: 1.5;
+  }
+  .flow__headline__en{
+    display: block;
+    margin-left: calc(24 * var(--var-fzFlex));
+    font-family: "Dancing Script", cursive;
+    font-size: calc(28 * var(--var-fzFlex));
+    line-height: 1.8;
+  }
+  .flow__text{
+    margin-top: calc(40 * var(--var-fzFlex));
+    width: calc(315 * var(--var-fzFlex));
+    font-size: calc(15 * var(--var-fzFlex));
+    line-height: 2;
+  }
+  .flow__container{
+    display: flex;
+    justify-content: spa;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: calc(60 * var(--var-fzFlex)) auto 0;
+    width: calc(315 * var(--var-fzFlex));
+  }
+  .flow__container::after{
+    content: "";
+    width: calc(94 * var(--var-fzFlex));
+    height: 0;
+  }
+  .flow__step{
+    text-align: center;
+    width: calc(94 * var(--var-fzFlex));
+  }
+  .flow__step:nth-child(n+4){
+    margin-top: calc(20 * var(--var-fzFlex));
+  }
+  .flow__step__step{
+    color: var(--var-colMain);
+    font-size: calc(18 * var(--var-fzFlex));
+    line-height: 1.5;
+  }
+  .flow__step__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(13 * var(--var-fzFlex));
+    width: calc(94 * var(--var-fzFlex));
+    height: calc(94 * var(--var-fzFlex));
+    border-radius: calc(20 * var(--var-fzFlex));
+  }
+  .flow__step__icon img{
+    width: calc(52 * var(--var-fzFlex));
+    height: calc(52 * var(--var-fzFlex));
+    object-fit: contain;
+    object-position: center center;
+  }
+  .flow__step__text{
+    margin-top: calc(18 * var(--var-fzFlex));
+    font-size: calc(12 * var(--var-fzFlex));
+    line-height: 1.5;
+  }
+
+}
+
+/* price
+---------------------------------------------------- */
+.price{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: calc(91 * var(--var-fzFlex)) auto 0;
+  background-color: #FFF6D8
+}
+.price__box--l{
+  width: calc(492 * var(--var-fzFlex));
+}
+.price__box--m{
+  width: calc(320 * var(--var-fzFlex));
+}
+.price__box--s{
+  width: calc(224 * var(--var-fzFlex));
+}
+
+
+
 /* schedule
 ---------------------------------------------------- */
 .schedule{
