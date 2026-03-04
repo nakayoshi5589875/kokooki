@@ -6,7 +6,7 @@
     --var-fzFlex: calc(1vw / 375 * 100);
   }
 }
-*:focus{
+*:focus-visible{
   outline: 2px solid #FB8F2A;
   outline-offset: 2px;
 }
@@ -24,7 +24,7 @@ body{
   width: 100%;
 }
 main{
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img{
