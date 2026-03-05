@@ -11,6 +11,10 @@
   outline: 2px solid var(--var-colMain);
   outline-offset: 4px;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 30vh;
+}
 body{
   font-family: "Zen Kaku Gothic New", sans-serif;
   /* font-family: "Noto Sans", sans-serif; */
@@ -1916,4 +1920,20 @@ img{
   text-align: center;
   font-size: calc(14 * var(--var-fzFlex));
   line-height: 1.5;
+}
+
+
+
+
+
+/* animation
+---------------------------------------------------- */
+.u-fadeUp{
+  transform: translateY(calc(14 * var(--var-fzFlex)));
+  transition: .9s;
+  opacity: 0;
+}
+.u-fadeUp.is-scrollIn{
+  transform: translateY(0);
+  opacity: 1;
 }
