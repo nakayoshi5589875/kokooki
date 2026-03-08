@@ -20,7 +20,7 @@
         </h2>
       </div>
       <div class="contact__form">
-        <?php echo do_shortcode('[contact-form-7 id="0935e03" title="お問い合わせ"]') ?>
+        <?php echo do_shortcode('[contact-form-7 id="282f384" title="お問い合わせ"]') ?>
       </div>
     </div>
   </section>
