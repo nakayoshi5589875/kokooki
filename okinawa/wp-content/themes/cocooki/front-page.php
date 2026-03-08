@@ -1,35 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ココロおき楽 首里久場川</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="/rework_shuri/assets/libs/splide/js/splide.js"></script>
-  <link rel="stylesheet" href="/rework_shuri/assets/libs/splide/css/splide.min.css">
-  <script defer src="/rework_shuri/assets/js/script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/rework_shuri/assets/css/rest.css">
-  <link rel="stylesheet" href="/rework_shuri/assets/css/style.css">
-</head>
-<body>
-<header class="js-header header">
-  <a href="/rework_shuri/" class="header__logo"><img src="/rework_shuri/assets/img/logo.png" alt="合同会社ココロおき楽"></a>
-  <nav class="header__nav">
-    <a href="/rework_shuri/staff/" class="js-toggle header__nav__link" data-target="js-header">スタッフ紹介</a>
-    <a href="/rework_shuri/case/" class="js-toggle header__nav__link" data-target="js-header">ご利用事例</a>
-    <a href="/rework_shuri/archive/" class="js-toggle header__nav__link" data-target="js-header">おき楽ニュース</a>
-    <a href="/rework_shuri/#contact/" class="js-toggle header__nav__contact" data-target="js-header">問い合わせ・ご相談［無料］</a>
-    <a href="https://www.instagram.com/kokorookiraku.daycare.teruya?igsh=b3Ftems0cTJxMmIx&utm_source=qr" target="_blank" class="header__nav__sns"><img src="/rework_shuri/assets/img/icon_instagram.svg" alt="Instagramへのリンク"></a>
-  </nav>
-  <a href="#" class="js-toggle header__nav__btn" data-target="js-header">
-    <span class="header__nav__btn__bar"></span>
-    <span class="header__nav__btn__bar"></span>
-    <span class="header__nav__btn__bar"></span>
-    <span class="header__nav__btn__text">MENU</span>
-  </a>
-</header>
+<?php get_header(); ?>
+
 <main>
   <section class="kv">
     <div class="kv__main">
@@ -50,12 +20,12 @@
       </div>
     </div>
     <p class="kv__suText">Counseling station</p>
-    <p class="kv__deco"><img src="/rework_shuri/assets/img/deco01.png" alt=""></p>
-    <p class="kv__deco02"><img src="/rework_shuri/assets/img/deco02.png" alt=""></p>
+    <p class="kv__deco"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco01.png" alt=""></p>
+    <p class="kv__deco02"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco02.png" alt=""></p>
   </section>
 
   <section class="about">
-    <p class="about__image"><img src="/rework_shuri/assets/img/about01.jpg" alt=""></p>
+    <p class="about__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/about01.jpg" alt=""></p>
     <div class="about__main">
       <h2 class="js-scrollIn u-fadeUp about__title">心理師と看護師が<br class="sp">立ち上げた<br>民間リワーク施設です。</h2>
       <div class="js-scrollIn u-fadeUp about__text">
@@ -97,85 +67,74 @@
     </div>
   </section>
 
-  
   <section class="blog">
     <div class="blog__top">
-      <h2 class="blog__headline">
-        <span class="blog__headline__ja">お知らせ</span>
-        <span class="blog__headline__en">Blog</span>
+      <h2 class="c-headline">
+        <span class="c-headline__ja">お知らせ</span>
+        <span class="c-headline__en">Blog</span>
       </h2>
     </div>
     <div class="blog__wrap">
       <div class="blog__controller">
-        <p class="js-splide_arrowLeft blog__controller__left"><img src="/rework_shuri/assets/img/icon_arrow_right-black.svg" alt=""></p>
+        <p class="js-splide_arrowLeft blog__controller__left"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_arrow_right-black.svg" alt=""></p>
         <p class="js-splide_count blog__controller__count"></p>
-        <p class="js-splide_arrowRight blog__controller__right"><img src="/rework_shuri/assets/img/icon_arrow_right-black.svg" alt=""></p>
+        <p class="js-splide_arrowRight blog__controller__right"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_arrow_right-black.svg" alt=""></p>
       </div>
-      <div class="splide blog__container" aria-label="お知らせのカルーセル">
+      <div class="splide blog__container" aria-label="ブログのカルーセル">
         <div class="splide__track blog__track">
           <div class="splide__list">
-            <a class="splide__slide blog__box" href="">
-              <div class="blog__box__top">
-                <p class="blog__box__image"><img src="/rework_shuri/assets/img/logo.png" alt=""></p>
-                <p class="blog__box__date">2023.10.10</p>
-              </div>
-              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
-            </a>
+            <?php
+              $popular_args = array(
+                'post_type'       => 'news',
+                'order'           => 'DESC',
+                'post_status'     => 'publish',
+                'posts_per_page'  => 5,
+              );
+              $popular_query = new WP_Query( $popular_args );
 
-            <a class="splide__slide blog__box" href="">
-              <div class="blog__box__top">
-                <p class="blog__box__image"><img src="/rework_shuri/assets/img/logo.png" alt=""></p>
-                <p class="blog__box__date">2023.10.10</p>
-              </div>
-              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
-            </a>
-
-            <a class="splide__slide blog__box" href="">
-              <div class="blog__box__top">
-                <p class="blog__box__image"><img src="/rework_shuri/assets/img/logo.png" alt=""></p>
-                <p class="blog__box__date">2023.10.10</p>
-              </div>
-              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
-            </a>
-
-            <a class="splide__slide blog__box" href="">
-              <div class="blog__box__top">
-                <p class="blog__box__image"><img src="/rework_shuri/assets/img/logo.png" alt=""></p>
-                <p class="blog__box__date">2023.10.10</p>
-              </div>
-              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
-            </a>
-
-            <a class="splide__slide blog__box" href="">
-              <div class="blog__box__top">
-                <p class="blog__box__image"><img src="/rework_shuri/assets/img/logo.png" alt=""></p>
-                <p class="blog__box__date">2023.10.10</p>
-              </div>
-              <p class="blog__box__text">認知行動療法の学校紹介キャンペーンのお知らせです。</p>
-            </a>
+              if( $popular_query->have_posts() ):
+              ?>
+              <?php while( $popular_query->have_posts() ) : $popular_query->the_post(); ?>
+                <a class="splide__slide blog__box" href="<?php the_permalink(); ?>">
+                  <div class="blog__box__top">
+                    <p class="blog__box__image">
+                      <?php if (has_post_thumbnail()) : ?>
+                        <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'post-thumbnail')); ?>" alt="">
+                      <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb.png" alt="">
+                      <?php endif; ?>
+                    </p>
+                    <p class="blog__box__date"><?php the_time("Y/m/d"); ?></p>
+                  </div>
+                  <p class="blog__box__text"><?php the_title(); ?></p>
+                </a>
+              <?php endwhile; ?>
+              <?php endif; wp_reset_postdata(); ?>
           </div>
         </div>
       </div>
       
     </div>
     <div class="blog__bottom">
-      <a href="/rework_shuri/archive/" class="blog__button">
-        <p class="blog__button__icon"><img src="/rework_shuri/assets/img/icon_arrow_right.svg" alt=""></p>
+      <a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="blog__button">
+        <p class="blog__button__icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_arrow_right.svg" alt=""></p>
         もっと見る
       </a>
     </div>
   </section>
 
+
+
   <section class="yumtaku">
     <h2 class="yumtaku__text">Yumtaku Time</h2>
     <div class="yumtaku__image">
-    <picture>
-      <source srcset="/rework_shuri/assets/img/yumtaku_image-sp.jpg" media="(max-width: 768px)">
-      <img src="/rework_shuri/assets/img/yumtaku_image.jpg" alt="">
-    </picture>
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/yumtaku_image-sp.jpg" media="(max-width: 768px)">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/yumtaku_image.jpg" alt="">
+      </picture>
     </div>
-    <p class="yumtaku__deco01"><img src="/rework_shuri/assets/img/deco06.png" alt=""></p>
-    <p class="yumtaku__deco02"><img src="/rework_shuri/assets/img/deco07.png" alt=""></p>
+    <p class="yumtaku__deco01"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco06.png" alt=""></p>
+    <p class="yumtaku__deco02"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco07.png" alt=""></p>
   </section>
   
   <section class="flow">
@@ -189,27 +148,27 @@
     <ol class="flow__container">
       <li class="js-scrollIn u-fadeUp flow__step">
         <p class="flow__step__step">STEP1</p>
-        <p class="flow__step__icon"><img src="/rework_shuri/assets/img/flow01.png" alt=""></p>
+        <p class="flow__step__icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flow01.png" alt=""></p>
         <p class="flow__step__text">お問い合わせ・<br>見学のご予約</p>
       </li>
       <li class="js-scrollIn u-fadeUp flow__step">
         <p class="flow__step__step">STEP2</p>
-        <p class="flow__step__icon"><img src="/rework_shuri/assets/img/flow02.png" alt=""></p>
+        <p class="flow__step__icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flow02.png" alt=""></p>
         <p class="flow__step__text">ご利用相談・<br>見学・体験</p>
       </li>
       <li class="js-scrollIn u-fadeUp flow__step">
         <p class="flow__step__step">STEP3</p>
-        <p class="flow__step__icon"><img src="/rework_shuri/assets/img/flow03.png" alt=""></p>
+        <p class="flow__step__icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flow03.png" alt=""></p>
         <p class="flow__step__text">受給者証の<br>申請・発行</p>
       </li>
       <li class="js-scrollIn u-fadeUp flow__step">
         <p class="flow__step__step">STEP4</p>
-        <p class="flow__step__icon"><img src="/rework_shuri/assets/img/flow04.png" alt=""></p>
+        <p class="flow__step__icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flow04.png" alt=""></p>
         <p class="flow__step__text">ご利用契約</p>
       </li>
       <li class="js-scrollIn u-fadeUp flow__step">
         <p class="flow__step__step">STEP5</p>
-        <p class="flow__step__icon"><img src="/rework_shuri/assets/img/flow05.png" alt=""></p>
+        <p class="flow__step__icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flow05.png" alt=""></p>
         <p class="flow__step__text">ご利用スタート</p>
       </li>
     </ol>  
@@ -308,36 +267,7 @@
   </section>
 
 
-  <section class="contactAddress">
-    <p class="contactAddress__lead">ココロの健康とあなたらしい働き方を目指して、<br class="sp">復職・再就職をサポートします。</p>
-    <h2 class="contactAddress__headline">お問合せ・見学いつでもお気軽に♪</h2>
-    <div class="contactAddress__link">
-      <a href="tel:098−917−4565" class="contactAddress__link__button">お電話</a>
-      <a href="https://lin.ee/WY4dYiP" target="_blank" class="contactAddress__link__button">公式LINE</a>
-    </div>
-    <p class="contactAddress__time">10:00-16:00［月〜金］</p>
-  </section>
-
-  <footer class="footer">
-    <div class="footer__main">
-      <div class="footer__details">
-        <h2 class="footer__details__logo"><img src="/rework_shuri/assets/img/logo02.png" alt="リワーク＆カウンセリングステーション　ココロおき楽"></h2>
-        <p class="footer__image sp"><img src="/rework_shuri/assets/img/footer_image.jpg" alt=""></p>
-        <div class="footer__details__address">
-          〒903-0807<br>
-          那覇市首里久場川町2-152-25（2F）
-        </div>
-        <p class="footer__details__tel">TEL.<strong>098-917-4565</strong></p>
-        <p class="footer__details__tel">FAX.098-917-4566</p>
-        <p class="footer__details__mail">Mail : contact@kokorookiraku.com</p>
-      </div>
-      <p class="footer__image pc"><img src="/rework_shuri/assets/img/footer_image.jpg" alt=""></p>
-      <p class="footer__map"><img src="/rework_shuri/assets/img/footer_map.png" alt=""></p>
-    </div>
-
-    <small class="copyright">Copyright© ️2023 ココロおき楽 All Rights Reserved.</small>
-
-  </footer>
 </main>
-</body>
-</html>
+
+<?php
+get_footer();
