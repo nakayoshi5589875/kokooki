@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
+<title>
+<?php
+if ( is_singular() ) {
+echo get_the_title(). " | " .get_bloginfo('name');
+} elseif ( is_post_type_archive() ) {
+	$post_type = get_post_type();
+	$obj = get_post_type_object( $post_type );
+	echo $obj->labels->singular_name. " | " .get_bloginfo('name');
+} elseif ( is_archive() ) {
+    the_archive_title(). " | " .get_bloginfo('name');
+} else {
+  echo get_bloginfo('name');
+}
+?>
+</title>
+<meta name="description" content="<?php get_bloginfo('description'); ?>">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<link rel="icon" href="/favicon.png" sizes="32x32" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/splide/js/splide.js"></script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/splide/css/splide.min.css">
+<script defer src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/rest.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 
 <?php wp_head(); ?>
 </head>
@@ -13,32 +35,19 @@
 <body>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header class="p-header">
-		<h1 class="p-header__logo">
-			<a href="<?php echo home_url("/"); ?>">
-				<picture>
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" type="image/webp" />
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="ココロおき楽">
-				</picture>
-			</a>
-		</h1>
-		<div class="js-nav p-header__main">
-			<nav class="p-header__nav">
-				<a href="<?php echo home_url("/"); ?>/staff/" class="p-header__link">スタッフ紹介</a>
-				<a href="<?php echo home_url("/"); ?>/case/" class="p-header__link">ご利用事例</a>
-				<a href="<?php echo home_url("/"); ?>/news/" class="p-header__link">おき楽ニュース</a>
-			</nav>
-			<a href="/#contact" class="p-header__contact">問い合わせ・ご相談［無料］</a>
-			<a href="https://www.instagram.com/kokorookiraku/" target="_blank" class="p-header__sns">
-				<picture>
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icon_ig.webp" type="image/webp" />
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_ig.png" alt="Instagtam">
-				</picture>
-			</a>
-		</div>
-		<div class="js-headButton js-nav p-header__button" data-target="js-nav">
-			<span class="p-header__button__bar"></span><span class="p-header__button__bar"></span><span class="p-header__button__bar"></span>
-			<p class="p-header__button__text">MENU</p>
-		</div>
+	<header class="js-header header">
+		<a href="<?php echo home_url("/"); ?>/"  class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="ココロおき楽 カウンセリングスペース"></a>
+		<nav class="header__nav">
+			<a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="js-toggle header__nav__link" data-target="js-header">新着情報</a>
+			<a href="<?php echo home_url("/"); ?>/#service" class="js-toggle header__nav__link" data-target="js-header">ご利用案内</a>
+			<a href="<?php echo home_url("/"); ?>/#counselor" class="js-toggle header__nav__link" data-target="js-header">カウンセラー紹介</a>
+			<a href="<?php echo home_url("/"); ?>/#company" class="js-toggle header__nav__link" data-target="js-header">会社概要</a>
+			<a href="<?php echo home_url("/"); ?>/#contact" class="js-toggle header__nav__contact" data-target="js-header">問い合わせ・ご相談［無料］</a>
+		</nav>
+		<a href="#" class="js-toggle header__nav__btn" data-target="js-header">
+			<span class="header__nav__btn__bar"></span>
+			<span class="header__nav__btn__bar"></span>
+			<span class="header__nav__btn__bar"></span>
+			<span class="header__nav__btn__text">MENU</span>
+		</a>
 	</header>
-
