@@ -75,8 +75,9 @@
 
       <section class="news__sideNav">
         <form action="<?php echo home_url(); ?>" method="get" class="news__search">
-			<input type="text" name="s" value="<?php the_search_query(); ?>" placeholder="検索">
-    		<button><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_search.svg" alt=""></button>
+          <input type="text" name="s" value="<?php the_search_query(); ?>" placeholder="検索">
+          <input type="hidden" name="post_type" value="news">
+          <button><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_search.svg" alt=""></button>
         </form>
 
        <?php
