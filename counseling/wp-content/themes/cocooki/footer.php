@@ -18,6 +18,8 @@
           <span class="c-headline__ja">お問い合わせ</span>
           <span class="c-headline__en">Contact</span>
         </h2>
+        <p class="contact__notes">お問い合わせフォームまたは、<br>公式LINEからお気軽に<br>ご連絡ください。</p>
+        <p class="contact__deco"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco05.png" alt=""></p>
       </div>
       <div class="contact__form">
         <?php echo do_shortcode('[contact-form-7 id="282f384" title="お問い合わせ"]') ?>

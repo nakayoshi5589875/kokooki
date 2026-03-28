@@ -2135,6 +2135,13 @@ img{
   line-height: 1.8;
   font-weight: 500;
 }
+.staff__subhead{
+  display: block;
+  margin: calc(177 * var(--var-fzFlex)) 0 calc(66 * var(--var-fzFlex));
+  font-size: calc(40 * var(--var-fzFlex));
+  line-height: 1;
+
+}
 .staff__container{
   margin-top: calc(68 * var(--var-fzFlex));
 }
@@ -2234,6 +2241,12 @@ img{
     font-size: calc(20 * var(--var-fzFlex));
     line-height: 1.8;
     font-weight: 500;
+  }
+  .staff__subhead{
+    display: block;
+    margin: calc(69 * var(--var-fzFlex)) 0 calc(43 * var(--var-fzFlex));
+    font-size: calc(32 * var(--var-fzFlex));
+    line-height: 1;
   }
   .staff__container{
     margin-top: calc(68 * var(--var-fzFlex));

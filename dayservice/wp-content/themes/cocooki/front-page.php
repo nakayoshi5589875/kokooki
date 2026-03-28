@@ -87,7 +87,7 @@
           <li class="support__container__list">・言語聴覚士による構音障害の検査、評価、訓練</li>
           <li class="support__container__list">・ソーシャルスキルトレーニング</li>
           <li class="support__container__list">・教員免許保持者による学習指導</li>
-          <li class="support__container__list">・未就学児からの訓練でスムーズな小学校への<br>移行をサポート</li>
+          <li class="support__container__list">・未就学児からの訓練でスムーズな小学校への<br class="pc">移行をサポート</li>
         </ul>
         <ul class="support__box">
           <li class="support__container__list">・担任との連携協力</li>

@@ -51,6 +51,20 @@ function create_custom_post_type() {
     )
   );
   register_post_type(
+    'staff-b', // 投稿タイプ名（半角小文字・20文字以内）
+    array(
+      'labels' => array(
+        'name'          => 'スタッフ紹介(就労継続支援B型)',
+        'singular_name' => 'スタッフ紹介(就労継続支援B型)',
+      ),
+      'public'        => true,
+      'has_archive'   => true,
+      'menu_position' => 5,
+      'menu_icon'     => 'dashicons-megaphone', // アイコン
+      'supports'      => array('title'),
+    )
+  );
+  register_post_type(
     'case', // 投稿タイプ名（半角小文字・20文字以内）
     array(
       'labels' => array(
