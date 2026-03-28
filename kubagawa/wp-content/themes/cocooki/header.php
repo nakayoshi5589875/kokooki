@@ -39,6 +39,7 @@ echo get_the_title(). " | " .get_bloginfo('name');
     <a href="<?php echo home_url("/"); ?>/" class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="合同会社ココロおき楽"></a>
     <nav class="header__nav">
       <a href="<?php echo get_post_type_archive_link( 'staff' ); ?>" class="js-toggle header__nav__link" data-target="js-header">スタッフ紹介</a>
+      <a href="<?php echo home_url("/"); ?>/support-b/" class="js-toggle header__nav__link" data-target="js-header">就労支援B型</a>
       <a href="<?php echo get_post_type_archive_link( 'case' ); ?>" class="js-toggle header__nav__link" data-target="js-header">ご利用事例</a>
       <a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="js-toggle header__nav__link" data-target="js-header">おき楽ニュース</a>
       <a href="<?php echo home_url("/"); ?>/#contact/" class="js-toggle header__nav__contact" data-target="js-header">問い合わせ・ご相談［無料］</a>

@@ -20,7 +20,7 @@
             </p>
             <div class="staff__profile">
               <?php if( get_field('肩書')): ?>
-              <p class="staff__position"><?php echo get_field('肩書資格') ?></p>
+              <p class="staff__position"><?php echo get_field('肩書') ?></p>
               <?php endif; ?>
               <h2 class="staff__name">
                 <?php if( get_field('名前')): ?>
@@ -56,7 +56,7 @@
             <?php if( get_field('座右の銘')): ?>
                 <dl class="staff__define">
                 <dt class="staff__term">座右の銘</dt>
-                <dt class="staff__details">初心忘れ<?php echo nl2br(get_field('座右の銘')) ?></dt>
+                <dt class="staff__details"><?php echo nl2br(get_field('座右の銘')) ?></dt>
               </dl>
             <?php endif; ?>
             <?php if( get_field('一言')): ?>

@@ -21,7 +21,12 @@
     </div>
     <p class="kv__suText">Counseling station</p>
     <p class="kv__deco"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco01.png" alt=""></p>
-    <p class="kv__deco02"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco02.png" alt=""></p>
+    <div class="kv__deco02">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/deco02-sp.png" media="(max-width: 768px)">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco02.png" alt="">
+      </picture>
+    </div>
   </section>
 
   <section class="about">
@@ -69,9 +74,9 @@
 
   <section class="blog">
     <div class="blog__top">
-      <h2 class="c-headline">
-        <span class="c-headline__ja">お知らせ</span>
-        <span class="c-headline__en">Blog</span>
+      <h2 class="blog__headline">
+        <span class="blog__headline__ja">お知らせ</span>
+        <span class="blog__headline__en">Blog</span>
       </h2>
     </div>
     <div class="blog__wrap">

@@ -14,7 +14,7 @@
         <div class="case__box__inner">
           <div class="case__box__main">
             <?php if( get_field('case')): ?>
-            <p class="case__box__headline"><?php get_field('case'); ?></p>
+            <p class="case__box__headline"><?php echo get_field('case'); ?></p>
             <?php endif; ?>
             <?php if( get_field('見出し')): ?>
             <h2 class="case__box__title"><?php echo nl2br(get_field('見出し')) ?></h2>
@@ -45,7 +45,6 @@
         </div>
       </section>
       <?php endwhile; ?>
-
     </div>
   </section>
 </main>
